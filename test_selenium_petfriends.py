@@ -18,12 +18,12 @@ def test_petfriends(web_browser):
 
     field_email = web_browser.find_element(By.ID, "email")
     field_email.clear()
-    field_email.send_keys("stanislav-irk@bk.ru")
+    field_email.send_keys("email")
 
     # То же самое для поля с паролем
     field_pass = web_browser.find_element(By.ID, "pass")
     field_pass.clear()
-    field_pass.send_keys("Taisia-28.11")
+    field_pass.send_keys("email")
 
     # Ищем кнопку "Войти" и нажимаем на нее
     btn_submit = web_browser.find_element(By.XPATH, "//button[@type='submit']")
